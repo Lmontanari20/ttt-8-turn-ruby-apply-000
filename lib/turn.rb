@@ -29,7 +29,5 @@ end
 # prints a prompt to specify it is the users turn, gets users turn from input
 def turn 
   puts "Please enter 1-9:"
-  placement = gets.strip
-  return placement
 end
 
