@@ -27,7 +27,13 @@ def input_to_index(index)
 end
 
 # prints a prompt to specify it is the users turn, gets users turn from input
-def turn 
+def turn(board)
   puts "Please enter 1-9:"
+  input = gets.strip
+  index = input_to_index(input)
+  if valid_move?
+    move(board, index)
+  else 
+    turn(board)
 end
 
