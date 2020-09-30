@@ -8,7 +8,7 @@ def display_board(board)
 end
 
 # given the board and index it should return true if the index is within range and is currently unoccupied 
-def valid_move?(board, index, character = "X")
+def valid_move?(board, index)
   if (index >= 0 && index <= 8) && (board[index] == "" || board[index] == " " || board[index] == nil)
     return true
   else 
